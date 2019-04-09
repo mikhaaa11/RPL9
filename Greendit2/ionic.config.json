@@ -1,0 +1,7 @@
+{
+  "name": "Greendit2",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
