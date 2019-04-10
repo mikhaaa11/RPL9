@@ -1,6 +1,15 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>thread</ion-title>
+  <ion-toolbar color="secondary">
+    <ion-title color="light">Create Thread</ion-title>
+    <ion-buttons>
+      <ion-back-button defaultHref="home" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+        <ion-button (click)="clickedPost()" href='./home' slot="start">
+          Post 
+        <ion-icon name="paper-plane" color="light"></ion-icon>
+        </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 

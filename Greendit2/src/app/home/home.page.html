@@ -1,10 +1,10 @@
 <ion-header>
   <ion-toolbar color="secondary">
-    <ion-title color="light">Greencus <br> Home Page</ion-title>
+    <ion-title color="light">Greencus</ion-title>
 
     <ion-buttons slot="primary">
 
-      <ion-button (click)="clickedContact()" href='./login'>
+      <ion-button (click)="clickedContact()" href="login">
         <ion-icon name="Contact" slot="icon-only" color="light"></ion-icon>
       </ion-button>
 
@@ -45,10 +45,15 @@
         </ion-avatar>
         <ion-label>(Username_43)</ion-label>
     </ion-item>
-    <img src="assets/icon/heartiz.jpeg" width="80" height="50">
+    <img src="assets/icon/heartiz.jpeg" width="150" height="90">
   </ion-card>
 
 
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
   <!-- Navigation Bar -->
   <ion-tabs>
     <ion-tab-bar slot="bottom" color="secondary">
@@ -86,4 +91,5 @@
 
     </ion-tab-bar>
   </ion-tabs>
-</ion-content>
+</ion-toolbar>
+</ion-footer>

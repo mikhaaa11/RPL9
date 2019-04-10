@@ -1,9 +1,86 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>notification</ion-title>
+  <ion-toolbar color="secondary">
+    <ion-title color="light">Notification</ion-title>
+    <ion-buttons>
+      <ion-back-button defaultHref="home" color="light"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content> 
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="https://www.mobafire.com/images/avatars/gnar-super-galaxy.png">
+        </ion-avatar>
+        <ion-label>
+          <h2>Thread</h2>
+          <p>Gnar commented your thread</p>
+        </ion-label>
+        <ion-button fill="outline" slot="end" color="secondary" href='./home'>View</ion-button>
+      </ion-item>
 
+      <ion-item>
+          <ion-avatar slot="start">
+            <img src="https://www.mobafire.com/images/avatars/gnar-snow-day.png">
+          </ion-avatar>
+          <ion-label>
+            <h2>Private Message</h2>
+            <p>Gnar sent you a message!</p>
+          </ion-label>
+          <ion-button fill="outline" slot="end" color="secondary" href='./message'>View</ion-button>
+      </ion-item>
+
+      <ion-item>
+          <ion-avatar slot="start">
+            <img src="https://www.mobafire.com/images/avatars/teemo-little-devil.png">
+          </ion-avatar>
+          <ion-label>
+            <h2>Private Message</h2>
+            <p>Teemo sent you a message!</p>
+          </ion-label>
+          <ion-button fill="outline" slot="end" color="secondary" href='./message'>View</ion-button>
+      </ion-item>
+      
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+     <!-- Navigation Bar -->
+  <ion-tabs>
+    <ion-tab-bar slot="bottom" color="secondary">
+
+      <!-- Tombol Home -->
+        <ion-tab-button href='./home'>
+          <ion-icon name="Home"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-tab-button>
+
+      <!-- Tombol Search -->
+        <ion-tab-button href='./search'>
+          <ion-icon name="Search"></ion-icon>
+          <ion-label>Search</ion-label>
+        </ion-tab-button>
+  
+      <!-- Tombol Create Thread -->
+        <ion-tab-button href='./thread'>
+          <ion-icon name="Add"></ion-icon>
+          <ion-label>Create</ion-label>
+        </ion-tab-button>
+  
+      <!-- Tombol Notification -->
+       <ion-tab-button href="notification">
+         <ion-icon name="Notifications"></ion-icon>
+         <ion-label>Notification</ion-label>
+       </ion-tab-button>
+  
+      <!-- Tombol Private Message -->
+       <ion-tab-button href="message">
+         <ion-icon name="Chatboxes"></ion-icon>
+         <ion-label>Message</ion-label>
+       <ion-badge>99</ion-badge>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+  </ion-toolbar>
+</ion-footer>
